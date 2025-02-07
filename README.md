@@ -1,3 +1,5 @@
+# This is not my project I cloned it from the below YT guy, I cloned it just for making changes i.e censoring the offensive words in tweets for my major project and to let my projects mates see the working. 
+
 # MERN Stack Project: Build and Deploy a Twitter Clone From Scratch | JWT, Socket.io
 
 ![Demo App](https://i.ibb.co/f8y9vGS/Group-82.png)
