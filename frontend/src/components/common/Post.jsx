@@ -4,7 +4,6 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaRegBookmark } from "react-icons/fa6";
 import { FaTrash } from "react-icons/fa";
 import { useState, useEffect } from "react"; // Add useEffect
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-hot-toast";
@@ -18,7 +17,7 @@ const Post = ({ post }) => {
     useEffect(() => {
         console.log("Post received:", post);
     }, [post]);
-
+	const[censoredText, setCensoredText] = useState(" ");
 	const [comment, setComment] = useState("");
 	const { data: authUser } = useQuery({ queryKey: ["authUser"] });
 	const queryClient = useQueryClient();
