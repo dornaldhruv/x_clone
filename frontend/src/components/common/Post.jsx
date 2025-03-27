@@ -17,7 +17,7 @@ const Post = ({ post }) => {
     useEffect(() => {
         console.log("Post received:", post);
     }, [post]);
-	const[censoredText, setCensoredText] = useState(" ");
+
 	const [comment, setComment] = useState("");
 	const { data: authUser } = useQuery({ queryKey: ["authUser"] });
 	const queryClient = useQueryClient();
